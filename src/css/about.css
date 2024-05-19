@@ -1,131 +1,131 @@
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--background-color);
-  padding: 0 15%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--background-color);
+	padding: 0 15%;
 }
 
 .about {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  padding: 16%;
-  background-image: url(../../public/images/8.jpeg);
-  background-size: cover;
-  background-position: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	padding: 16%;
+	background-image: url(../../public/images/8.jpeg);
+	background-size: cover;
+	background-position: center;
 }
 
 .about h1 {
-  font-size: 100px;
-  color: var(--accent-color);
-  text-transform: uppercase;
-  margin-right: 30px;
+	font-size: 100px;
+	color: var(--accent-color);
+	text-transform: uppercase;
+	margin-right: 30px;
 }
 
 .about p {
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--text-color);
+	font-size: 15px;
+	font-weight: 500;
+	color: var(--text-color);
 }
 
 @media screen and (max-width: 600px) {
-  .main {
-    padding: 0 10%;
-  }
+	.main {
+		padding: 0 10%;
+	}
 
-  .about {
-    padding: 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+	.about {
+		padding: 15%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 
-  .about h1 {
-    font-size: 60px;
-    margin-right: 0;
-  }
+	.about h1 {
+		font-size: 60px;
+		margin-right: 0;
+	}
 
-  .about p {
-    font-size: 12px;
-    text-align: center;
-  }
+	.about p {
+		font-size: 12px;
+		text-align: center;
+	}
 }
 
 .touch {
-  height: 50vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
+	height: 50vh;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 .touch-box h2 {
-  font-size: 60px;
-  color: var(--text-color);
+	font-size: 60px;
+	color: var(--text-color);
 }
 
 .touch-box p {
-  font-size: small;
-  font-weight: 500;
-  color: var(--text-color);
+	font-size: small;
+	font-weight: 500;
+	color: var(--text-color);
 }
 
 .contact-box {
-  border: 2px solid var(--primary-color);
-  border-radius: 30px;
-  padding: 5%;
+	border: 2px solid var(--primary-color);
+	border-radius: 30px;
+	padding: 5%;
 }
 
 .cnt {
-  margin: 20px;
+	margin: 20px;
 }
 
 .cnt-title {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
 }
 
 .contact-box p {
-  text-decoration: underline var(--primary-color);
+	text-decoration: underline var(--primary-color);
 }
 
 .contact-box img {
-  width: 40px;
+	width: 40px;
 }
 
 @media screen and (max-width: 600px) {
-  .touch {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 30px;
-  }
+	.touch {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		gap: 30px;
+	}
 
-  .touch-box h2 {
-    font-size: 40px;
-  }
+	.touch-box h2 {
+		font-size: 40px;
+	}
 
-  .touch-box p {
-    font-size: 10px;
-  }
+	.touch-box p {
+		font-size: 10px;
+	}
 
-  .cnt {
-    margin-bottom: 20px;
-    text-align: left;
-  }
+	.cnt {
+		margin-bottom: 20px;
+		text-align: left;
+	}
 
-  .contact-box img {
-    width: 30px;
-  }
+	.contact-box img {
+		width: 30px;
+	}
 }
