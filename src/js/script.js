@@ -3,6 +3,8 @@ $(window).on('scroll', () => {
 	const header = $('header')
 	header.toggleClass('sticky', $(window).scrollTop() > 0)
 })
+
+// Mobile Menu
 $('DOMContentLoaded', () => {
 	const iconMenuMobile = $('.icon-menu-mobile')
 	const menuMobile = $('.menu-mobile')
