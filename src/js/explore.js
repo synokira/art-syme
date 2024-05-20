@@ -1,42 +1,37 @@
 //Accordion
-const tabs = document.querySelectorAll('.tab')
+const tabs = $('.tab')
 
-tabs.forEach((tab, index) => {
+tabs.each((index, tab) => {
 	if (index !== 0) {
-		tab.addEventListener('mouseover', () => {
-			tabs[0].style.width = '10%'
+		$(tab).on('mouseover', () => {
+			tabs.eq(0).css('width', '5%')
 		})
 	}
 })
+const imagesAccordion = $('.images-accordion')
 
-document.querySelector('.images-accordion').addEventListener('mouseout', () => {
-	tabs[0].style.width = '100%'
+imagesAccordion.on('mouseout', () => {
+	tabs.eq(0).css('width', '100%')
 })
 
 //Gallery navigation
-const containers = document.querySelectorAll('.imageContainer')
+const containers = $('.image-container')
+containers.css('display', 'none')
 
-containers.forEach((container) => {
-	container.style.display = 'none'
-})
+const editorialContainer = $('#editorial')
+editorialContainer.css('display', 'grid')
 
-const editorialContainer = document.querySelector('#editorial')
+const links = $('.explore-nav a')
 
-editorialContainer.style.display = 'grid'
-
-const links = document.querySelectorAll('.explore-nav a')
-
-links.forEach((link) => {
-	link.addEventListener('click', (event) => {
+links.each((_, a) => {
+	$(a).on('click', (event) => {
 		event.preventDefault()
 
-		containers.forEach((container) => {
-			container.style.display = 'none'
-		})
+		containers.css('display', 'none')
 
-		const target = link.getAttribute('href').slice(1)
-		const targetContainer = document.querySelector(`#${target}`)
+		const target = $(a).attr('href')
+		const targetContainer = $(target)
 
-		targetContainer.style.display = 'grid'
+		targetContainer.css('display', 'grid')
 	})
 })

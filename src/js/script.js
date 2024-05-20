@@ -1,11 +1,11 @@
 //Sticky Header
 $(window).on('scroll', () => {
-	const header = $('header')
+	const header = $('.header')
 	header.toggleClass('sticky', $(window).scrollTop() > 0)
 })
 
 // Mobile Menu
-$('DOMContentLoaded', () => {
+$(window).ready(() => {
 	const iconMenuMobile = $('.icon-menu-mobile')
 	const menuMobile = $('.menu-mobile')
 	const iconClose = $('.menu-icon-close')
@@ -19,8 +19,10 @@ $('DOMContentLoaded', () => {
 	})
 })
 
-// Accordion
-$('.accordion-header').on('click', (event) => {
+// Accordion on home page
+const accordionHeaders = $('.accordion-header')
+
+accordionHeaders.on('click', (event) => {
 	const clickedHeader = $(event.currentTarget)
 
 	const activeHeaders = $('.accordion-header.active')
